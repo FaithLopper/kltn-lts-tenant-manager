@@ -1,0 +1,44 @@
+@import "@assets/scss/global";
+
+.login-page {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .login-form {
+        width: 420px;
+        padding: 24px;
+        border-radius: 8px;
+
+        h3, button {
+            text-align: center;
+        }
+
+        div[class~='ant-form-item-label'] label {
+            font-size: 18px;
+            line-height: 24px;
+            font-weight: 300;
+        }
+    }
+
+    .login-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        .login-logo {
+            width: 50%;
+            margin-bottom: 0.75rem;
+        }
+
+        .login-appname {
+            text-align: center;
+            font-weight: 300;
+            font-size: 24px;
+            line-height: 36px;
+        }
+    }
+
+}

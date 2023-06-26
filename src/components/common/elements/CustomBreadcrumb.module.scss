@@ -1,0 +1,40 @@
+@import '@assets/scss/global';
+
+.breadcrumb {
+    ol {
+        display: flex;
+        column-gap: 5px;
+        // remove the default style of ol
+        list-style: none;
+        padding-inline: 0px;
+        margin-block: 0px;
+    }
+
+    .separator {
+        margin-left: 8px;
+        margin-right: 3px;
+    }
+
+    .link {
+        color: black;
+        span {
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+            // height: 50px;
+            overflow: hidden;
+        }
+        a {
+            text-decoration: none;
+            outline: none;
+            color: black;
+            cursor: pointer;
+            border-radius: 4px;
+
+            &:hover {
+                background-color: rgba(0, 0, 0, 0.06);
+            }
+        }
+    }
+}

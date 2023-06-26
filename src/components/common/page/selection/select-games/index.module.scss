@@ -1,0 +1,89 @@
+@import "@assets/scss/global";
+
+.games-list-page{
+    .categories{
+        margin-top: 50px;
+        display: flex;
+        column-gap: 30px;
+        row-gap: 30px;
+        flex-wrap: wrap;
+    }
+}
+
+.video-list-page {
+    button.add-video-btn{
+        border-color: #2974a5;
+        color: #2974a5;
+    }
+
+    #add-new-video:hover{
+        border-color: #498cb3;
+        color: #498cb3;
+    }
+
+    .search-video{
+        border-color: #2974a5;
+    }
+
+    .action-btn-unselect {
+        :hover{
+            color: #163760;
+        }
+    }
+
+    .action-btn-select {
+        :hover{
+            color: #498cb3;
+        }
+    }
+}
+
+.custom-label-datepicker {
+    display: inline-block;
+    width: 30px;
+    line-height: 32px;
+    text-align: center;
+    margin-right: 4px;
+    margin-left: 5px;
+}
+
+.custom-date-field{
+    display: inline-block;
+    min-width: 181px;
+    max-width: 200px;
+}
+
+.list {
+    margin-top: 40px;
+    display: flex;
+    gap: 25px 20px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.divider {
+    border: 0;
+    border-top: 2px solid #e5e5e5a7;
+}
+
+.customTitle{
+    nav{
+        margin-bottom: 10px !important;
+    }
+    div{
+        font-size: 16px;
+    }
+}
+
+.dailyForm{
+    label{
+        font-size: 16px !important;
+    }
+    margin-top: 10px;
+}
+
+@media only screen and (min-width: 1500px) {
+    .list {
+        flex-wrap: nowrap;
+    }
+}

@@ -1,0 +1,156 @@
+html {
+    box-sizing: border-box;
+    // font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+}
+
+.ant-layout-content::-webkit-scrollbar {
+    width: 7px;
+    /* width of the entire scrollbar */
+}
+
+.ant-layout-content::-webkit-scrollbar-track {
+    background: rgb(174, 174, 174);
+    /* color of the tracking area */
+}
+
+.ant-layout-content::-webkit-scrollbar-thumb {
+    background-color: rgb(93, 94, 94);
+    /* color of the scroll thumb */
+    border-radius: 1.25rem;
+    /* roundness of the scroll thumb */
+    border: 0.1875rem solid rgb(93, 94, 94);
+    /* creates padding around scroll thumb */
+}
+
+#root {
+    min-height: 100vh;
+}
+
+.paging-item {
+    button {
+        padding: 1px;
+    }
+}
+
+/* CSS for form */
+.img-uploaded {
+    height: 86px;
+}
+
+.ant-card-head-title {
+    display: inline-block;
+    -ms-flex: 1;
+    flex: 1 1;
+    padding: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.ant-card-head {
+    min-height: 0;
+    margin-bottom: -1px;
+    padding: 6px 13px;
+    color: rgba(0, 0, 0, 0.85);
+    font-weight: 500;
+    font-size: 16px;
+    background: transparent;
+    border-bottom: 1px solid #f0f0f0;
+    border-radius: 2px 2px 0 0;
+}
+
+.footer-card-form {
+    // margin-top: $spacingSection;
+    background: #fff;
+    padding: 12px $spacingSection;
+    button + button,
+    a + button {
+        margin-left: 10px;
+    }
+}
+.disable-search {
+    display: none !important;
+}
+
+.category-transfer {
+    .ant-checkbox-wrapper-checked {
+        display: none;
+    }
+
+    .ant-transfer-list-checkbox {
+        display: none;
+    }
+}
+
+// .ant-table .ant-table-container .ant-table-content table .ant-table-row svg{
+//     color: #f69600;
+// }
+
+// .ant-modal-confirm-btns .ant-btn-primary{
+//     background-color: #f69600;
+// }
+.ant-modal-confirm-btns {
+    .ant-btn-default:hover {
+        border-color: #ffb429;
+        color: #ffb429;
+    }
+
+    .ant-btn-primary {
+        background-color: #f69600;
+
+        &:hover {
+            background-color: #ffb429;
+        }
+    }
+}
+
+.row-dragging {
+    background: #fafafa;
+    border: 1px solid #ccc;
+}
+
+.row-dragging td {
+    padding: 16px;
+}
+
+.row-dragging .drag-visible {
+    visibility: visible;
+}
+
+#components-table-demo-drag-sorting tr.drop-over-downward td {
+    border-bottom: 2px dashed #1677ff !important;
+}
+
+#components-table-demo-drag-sorting tr.drop-over-upward td {
+    border-top: 2px dashed #1677ff !important;
+}
+
+.quill {
+    .ql-toolbar {
+        line-height: 22px;
+    }
+    .ql-editor,
+    iframe.ql-video {
+        min-height: 300px !important;
+        max-height: 500px;
+    }
+    .ql-video {
+        width: 100vw;
+        height: 31.25vw;
+    }
+    .ql-snow .ql-tooltip {
+        left: calc(50% - 160px) !important;
+    }
+}

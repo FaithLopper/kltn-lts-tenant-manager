@@ -1,0 +1,27 @@
+@import "@assets/scss/global";
+
+.list-base {
+    margin: 20px;
+    border-radius: 10px;
+    background-color: white;
+    padding: 30px;
+    min-height: calc(100vh - 170px);
+
+    .title {
+        font-size: 32px;
+        margin-bottom: 5px;
+    }
+
+    .description {
+        font-size: 18px;
+        margin-bottom: 35px;
+    }
+
+    .action-bar {
+        margin-bottom: 24px;
+    }
+
+    .filter-form {
+        margin-bottom: 38px;
+    }
+}
